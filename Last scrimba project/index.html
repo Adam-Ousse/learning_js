@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+  <h1>Goose Ask</h1>
+    <div class="container">
+      <img src="newgoose.png" alt="logo">
+      <input id="input" type="text" placeholder="Got a question ?">
+      <button id="submit">Ask</button>
+      <input type="password" id="api" placeholder="Enter your Gemini api keys">
+    </div>
+    <div id="answer">
+        <p id="answer-text"></p>
+    </div>
+    <script src="./gemini.js" type="module"></script>
+    <script src="script.js" type="module"></script>
+  </body>

@@ -1,5 +1,3 @@
-# learning_js
- A repository to learning js for web dev
-
-[script](script.js) is a script
-
+# Learning js
+ A journey for learning Js.
+---
