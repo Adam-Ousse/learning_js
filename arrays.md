@@ -17,3 +17,15 @@ Popping :
 let popedNameLast = listOfNames.pop(); // removes the last element of an array //returns undefined if the array is empty
 let popedNameFirst = listOfNames.shift() // removes the first element of an array //returns undefined if the array is empty
 ```
+
+### Turning an object to an array 
+```js
+let users = {
+	"00":"Adam",
+	"01":"Idriss",
+	"02":"Albedo"
+}
+Object.values(users) // ['Adam', 'Idriss', 'Albedo']
+Object.keys(users) // ['00', '01', '02']
+Object.entries(users) // [['00', 'Adam'],['01', 'Idriss'], ['02', 'Albedo']]
+```

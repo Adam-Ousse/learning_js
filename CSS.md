@@ -21,7 +21,19 @@ Flexbox is commonly used for layout purposes to arrange items in a flexible mann
   align-self: center; /* flex-start, flex-end, stretch, baseline */
 }
 ```
-
+```css
+.thumbnails {
+    display: flex;
+    flex-wrap: wrap;/*wraps the elements inside of thumbnails to the max width*/
+    /*flex-wrap : wrap-reverse ; reverses the order*/
+    gap : 10px 15px;/* the chidl elements now have a top-bot margin of10px and a left right margin of 15px */
+    max-width: 560px;
+    margin: 50px auto;
+}
+.item {
+	flex-grow : 1; /*expand items to fit the parent element*/
+}
+```
 #### Grid
 CSS Grid is a powerful layout system for creating complex designs.
 
@@ -120,7 +132,8 @@ a:hover {
   text-decoration: underline;
 }
 ```
-
+cursor style pointer : ` cursor: pointer;`
+user select : `user-select:none;`
 ### Colors and Backgrounds
 
 #### Colors
@@ -182,6 +195,13 @@ Adjusting the layout for different screen sizes.
   .grid-container {
     grid-template-columns: 1fr; /* Single column grid */
   }
+}
+```
+
+### Styles of particular elements : 
+```css
+ul {
+	list-style-type: none; /* No cercles or squares for the list*/
 }
 ```
 
