@@ -1,4 +1,4 @@
-
+[Template string](Template%20string.md)
 ### Convert a string to a int 
 ```js
 let b = parseInt("214112");//return NaN if the first non-whitespace character cannot be converted to a number
