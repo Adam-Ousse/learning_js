@@ -23,6 +23,8 @@ const navbar = (
 )
 const root = ReactDOM.createRoot(document.getElementById("root"))
 root.render(navbar)
+//React 17 : 
 // ReactDOM.render(navbar, document.getElementById("root"))
+//react 18 :
 // ReactDOM.createRoot(document.getElementById("root")).render(navbar)
 ```

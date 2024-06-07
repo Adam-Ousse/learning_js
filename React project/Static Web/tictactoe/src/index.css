@@ -1,0 +1,23 @@
+:root {
+  font-family: Oxygen, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(49, 49, 49, 0.87);
+  background-color: #edddd4;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+
+  --normal-green: #197278;
+  --dark-green: #283d3b;
+  --light-green: #1fb9c4;
+  --normal-red: #c44536;
+  --dark-red: #772e25;
+  --light-red: #d82c16;
+  --draw-color: #dd8c2d;
+}

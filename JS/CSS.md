@@ -1,10 +1,16 @@
 Certainly! Below is a collection of common CSS used to position and design user interfaces. This includes properties for layout, spacing, and general styling to create visually appealing and functional UIs.
+### The box model :
+
+![[Pasted image 20240604114331.png]]
 
 ### Layout and Positioning
 
 #### Flexbox
 Flexbox is commonly used for layout purposes to arrange items in a flexible manner.
-
+![[Pasted image 20240604114945.png]]
+https://yoksel.github.io/flex-cheatsheet/#section-justify-content
+align-content : .. in vertical direction
+justify content : aligns children in horizontal direction
 ```css
 /* Flex container */
 .container {
@@ -41,15 +47,21 @@ CSS Grid is a powerful layout system for creating complex designs.
 /* Grid container */
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Define columns */
+  grid-template-columns: repeat(12, 1fr); /* Define columns split a row into 3 columns ,1fraction unit width*/
+  /*repeat(auto-fill,300px)" 300px height, automatic width
+  justifyContent : "space-around";
+  */
   grid-template-rows: auto; /* Define rows */
-  gap: 10px; /* Gap between items */
+  /* or instead 
+  gridAutoRows =  "150px" 
+  */
+  gap: 10px; /* Gap between items rowGap,columnGap */
 }
 
 /* Grid item */
 .grid-item {
-  grid-column: span 2; /* Span columns */
-  grid-row: 1 / 3; /* Define rows span */
+  grid-column: span 2; /* Span of 2 columns or gridColumn*/
+  grid-row: 1 / 3; /* Define how many rows span or gridRow : "span 2"*/
 }
 ```
 
@@ -214,7 +226,7 @@ input {
 
     padding-right: 10px;
 
-    box-sizing: border-box; /*without the border-box the width would be 100% +10px +10px from padding*/
+    box-sizing: border-box; /*without the border-box the width would be 100% +10px +10px from padding by default it's content-box */
 
 }
 ```
@@ -222,5 +234,22 @@ input {
 ```cs
 button{
 	padding : 10px 20px; /*10px top and bottom, 20px left and right*/
+}
+```
+
+
+```
+main {
+
+    padding: 57px 27px;
+
+    color: white;
+
+    background-image: url(./images/react-icon-large.png);
+
+    background-repeat: no-repeat;
+
+    background-position: right 75%;
+
 }
 ```
