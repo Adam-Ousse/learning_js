@@ -1,4 +1,4 @@
-import Square from "./Square.jsx";
+import Square from "./Square";
 import "./Board.css";
 import React from "react";
 
