@@ -3,6 +3,8 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import Board from "./Board.jsx";
+import React from "react";
+
 function App() {
   function clickX() {
     console.log("X");
